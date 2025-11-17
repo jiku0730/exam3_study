@@ -6,7 +6,7 @@
 /*   By: kjikuhar <kjikuhar@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 14:06:27 by kjikuhar          #+#    #+#             */
-/*   Updated: 2025/11/17 14:13:17 by kjikuhar         ###   ########.fr       */
+/*   Updated: 2025/11/17 14:43:00 by kjikuhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 
 # include <unistd.h>
 # include <stdarg.h>
+# include <stdio.h>
 
-int	my_printf(const char *format, ...);
+int		my_printf(const char *format, ...);
+size_t	my_strlen(const char *str);
 
 #endif
