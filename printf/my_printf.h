@@ -6,7 +6,7 @@
 /*   By: kjikuhar <kjikuhar@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 14:06:27 by kjikuhar          #+#    #+#             */
-/*   Updated: 2025/11/17 14:43:00 by kjikuhar         ###   ########.fr       */
+/*   Updated: 2025/11/17 21:21:41 by kjikuhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@
 
 int		my_printf(const char *format, ...);
 size_t	my_strlen(const char *str);
-
+int		my_putnum(int num);
 #endif
