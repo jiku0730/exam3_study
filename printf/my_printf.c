@@ -6,7 +6,7 @@
 /*   By: kjikuhar <kjikuhar@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 14:07:44 by kjikuhar          #+#    #+#             */
-/*   Updated: 2025/11/17 21:30:53 by kjikuhar         ###   ########.fr       */
+/*   Updated: 2025/11/17 21:38:00 by kjikuhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ static int	hundle_args(const char *format, int i, va_list *args)
 		write(STDOUT_FILENO, &c, 1);
 		return (1);
 	}
-	// else if (format[i] == 's')
-	// {
-	// 	const char *str = va_arg(*args, char *);
-	// 	write(STDOUT_FILENO, str, my_strlen(str));
-	// 	return (my_strlen(str));
-	// }
+	else if (format[i] == 's')
+	{
+		const char *str = va_arg(*args, char *);
+		write(STDOUT_FILENO, str, my_strlen(str));
+		return ((int)my_strlen(str));
+	}
 }
 
 int	my_printf(const char *format, ...)

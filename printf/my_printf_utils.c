@@ -6,7 +6,7 @@
 /*   By: kjikuhar <kjikuhar@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 14:07:44 by kjikuhar          #+#    #+#             */
-/*   Updated: 2025/11/17 21:24:45 by kjikuhar         ###   ########.fr       */
+/*   Updated: 2025/11/17 21:37:38 by kjikuhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,12 @@ size_t		my_strlen(const char *str)
 {
 	size_t	i;
 
+	i = 0;
 	while (str[i])
+	{
 		i++;
+
+	}
 	return (i);
 }
 
